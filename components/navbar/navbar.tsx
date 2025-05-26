@@ -19,7 +19,7 @@ export default function Navbar() {
     { label: "All", href: "/" },
     { label: "Projects", href: "/projects" },
     { label: "About", href: "/credential" },
-    
+    { label: "Achievements", href: "/achievements" },
   ];
 
   useEffect(() => {
