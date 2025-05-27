@@ -9,15 +9,10 @@ import HtmlIcon from "@/components/icons/html";
 import CssIcon from "@/components/icons/css";
 import LinkedInIcon from "@/components/icons/linkedIn";
 // import BehenceIcon from "@/components/icons/behence";
-import BootstrapIcon from "@/components/icons/bootstrap";
-import LaravelIcon from "@/components/icons/laravel";
 import MongoDBIcon from "@/components/icons/mongodb";
 import MySQLIcon from "@/components/icons/mysql";
-import Nextjs from "@/components/icons/nextjs";
 import PostgreSQLIcon from "@/components/icons/postgresql";
 import PythonIcon from "@/components/icons/python";
-import ReactIcon from "@/components/icons/react";
-import TailwindIcon from "@/components/icons/tailwindcss";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import PowerBIIcon from "@/components/icons/powerbi";
 import TableauIcon from "@/components/icons/tableau";
@@ -201,19 +196,6 @@ export default function Page() {
       </div>
       <div className="grid sm:grid-cols-2 gap-8">
         {/* Credentials Section */}
-        <section className=" card_bg p-4">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-6">Certifications</h2>
-            <div className="grid grid-cols-1 gap-8">
-              <div>
-                <h3 className="text-2xl font-bold mb-2">HackerRank Certifications</h3>
-                <p className="text-gray-700">
-                  SQL Basics
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
         <section className="card_bg p-4">
           <div className="container mx-auto px-4">
             <div className=""></div>
