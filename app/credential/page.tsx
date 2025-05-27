@@ -7,21 +7,24 @@ import { Button } from "@/components/ui/button";
 import { Instagram } from "lucide-react";
 import HtmlIcon from "@/components/icons/html";
 import CssIcon from "@/components/icons/css";
-import NodeJs from "@/components/icons/nodeJs";
 import LinkedInIcon from "@/components/icons/linkedIn";
 // import BehenceIcon from "@/components/icons/behence";
 import BootstrapIcon from "@/components/icons/bootstrap";
-import JavaScriptIcon from "@/components/icons/javascript";
 import LaravelIcon from "@/components/icons/laravel";
 import MongoDBIcon from "@/components/icons/mongodb";
 import MySQLIcon from "@/components/icons/mysql";
 import Nextjs from "@/components/icons/nextjs";
-import PhpIcon from "@/components/icons/php";
 import PostgreSQLIcon from "@/components/icons/postgresql";
 import PythonIcon from "@/components/icons/python";
 import ReactIcon from "@/components/icons/react";
 import TailwindIcon from "@/components/icons/tailwindcss";
 import { BorderBeam } from "@/components/magicui/border-beam";
+import PowerBIIcon from "@/components/icons/powerbi";
+import TableauIcon from "@/components/icons/tableau";
+import LookerStudioIcon from "@/components/icons/lookerstudio";
+import PandasIcon from "@/components/icons/pandas";
+import MatplotlibIcon from "@/components/icons/matplotlib";
+import SQLServerIcon from "@/components/icons/sqlserver";
 
 const width = 40;
 const height = 40;
@@ -99,46 +102,30 @@ export default function Page() {
                   </h3>
                   <div className="flex flex-col gap-4">
                     <div className="flex bg-blue-600/5 rounded-3xl p-2 gap-4 justify-around">
-                      <JavaScriptIcon width={width} height={height} />
                       <PythonIcon width={width} height={height} />
                     </div>
                     <div className="flex rounded-3xl p-2 gap-4 justify-around">
-                      <PhpIcon width={width} height={height} />
                       <HtmlIcon width={width} height={height} />
                       <CssIcon width={width} height={height} />
                     </div>
                   </div>
-                  {/* <ul className="list-disc ml-6">
-                    <li>JavaScript (Actively using)</li>
-                    <li>Python (Actively using)</li>
-                    <li>PHP (Proficient)</li>
-                    <li>HTML (Proficient)</li>
-                    <li>CSS (Proficient)</li>
-                  </ul> */}
                   <BorderBeam duration={6} size={100} />
                 </div>
                 <div className="card_bg p-6">
                   <h3 className="text-xl font-semibold mb-4">
-                    Frameworks & Libraries
+                    Visualization Tools & Libraries
                   </h3>
                   <div className="flex flex-col gap-4">
                     <div className="flex bg-green-600/5 rounded-3xl p-2 gap-4 justify-around">
-                      <Nextjs width={width} height={height} />
-                      <TailwindIcon width={width} height={height} />
+                      <PowerBIIcon width={width} height={height} />
+                      <TableauIcon width={width} height={height} />
+                      <LookerStudioIcon width={width} height={height} />
                     </div>
                     <div className="flex rounded-3xl p-2 gap-4 justify-around">
-                      <ReactIcon width={width} height={height} />
-                      <LaravelIcon width={width} height={height} />
-                      <BootstrapIcon width={width} height={height} />
+                      <PandasIcon width={width} height={height} />
+                      <MatplotlibIcon width={width} height={height} />
                     </div>
                   </div>
-                  {/* <ul className="list-disc ml-6">
-                    <li>React (Proficient)</li>
-
-                    <li>Laravel (Proficient)</li>
-                    <li>Tailwind CSS (Actively using)</li>
-                    <li>Bootstrap (Proficient)</li>
-                  </ul> */}
                   <BorderBeam duration={5} size={100} />
                 </div>
                 <div className="card_bg p-6">
@@ -147,19 +134,12 @@ export default function Page() {
                   </h3>
                   <div className="flex bg-green-600/5 rounded-3xl p-2 gap-4 justify-around">
                     <PostgreSQLIcon width={width} height={height} />
-                    <NodeJs width={width} height={height} />
+                    <SQLServerIcon width={width} height={height} />
                   </div>
                   <div className="flex rounded-3xl p-2 gap-4 justify-around">
                     <MongoDBIcon width={width} height={height} />
                     <MySQLIcon width={width} height={height} />
                   </div>
-
-                  {/* <ul className="list-disc ml-6">
-                    <li>MongoDB (Proficient)</li>
-                    <li>PostgreSQL (Actively using)</li>
-                    <li>MySQL (Proficient)</li>
-                    <li>Node.js (Proficient)</li>
-                  </ul> */}
                   <BorderBeam duration={4} size={100} />
                 </div>
               </div>

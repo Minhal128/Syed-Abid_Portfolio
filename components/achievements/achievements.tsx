@@ -15,36 +15,93 @@ interface Achievement {
 
 const certifications: Achievement[] = [
   {
-    title: "AWS Certified Solutions Architect",
+    title: "SQL (Basic)",
     description: "Professional certification for designing distributed systems on AWS",
     date: "2023",
-    issuer: "Amazon Web Services",
-    image: "/certificates/aws-cert.png"
+    issuer: "HackerRank",
+    image: "/7.jpg"
   },
   {
-    title: "Google Cloud Professional Developer",
+    title: "Python (Basic)",
     description: "Expertise in building scalable and reliable applications using Google Cloud",
     date: "2023",
-    issuer: "Google Cloud",
-    image: "/certificates/gcp-cert.png"
+    issuer: "HackerRank",
+    image: "/8.jpg"
   },
-  // Add more certifications as needed
+  {
+    title: "Forage - Power BI Job Simulation",
+    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    date: "2023",
+    issuer: "HackerRank",
+    image: "/9.jpg"
+  },
+  {
+    title: "Aspire Leaders Program",
+    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    date: "2023",
+    issuer: "HackerRank",
+    image: "/10.jpg"
+  },
+  {
+    title: "Google Business Intelligence Certification",
+    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    date: "2023",
+    issuer: "Coursera",
+    image: "/11.jpg"
+  },
+  {
+    title: "Google Soft Skills Program",
+    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    date: "2023",
+    issuer: "Google",
+    image: "/12.jpg"
+  },
+  {
+    title: "SQL (Intermediate)",
+    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    date: "2023",
+    issuer: "HackerRank",
+    image: "/13.jpg"
+  }
 ];
 
 const keyAchievements: Achievement[] = [
   {
-    title: "Led Development of Enterprise Platform",
-    description: "Successfully led a team of 10 developers in building a scalable enterprise platform serving 100k+ users",
+    title: "ASME Quest Chapter Resume Competition Winner",
+    description: "Won a Resume Competition organized by ASME Quest Chapter after competing against 40 individuals",
     date: "2023",
-    image: "/achievements/enterprise-platform.png"
+    image: "/2.jpg"
   },
   {
-    title: "Open Source Contribution",
-    description: "Contributed to major open-source projects with 1000+ stars on GitHub",
+    title: "National Internship Program Certificate of Appreciation",
+    description: "Received a certificate of appreciation after completing internship at National Internship Program, organized by Pakistan - U.S Alumni Network",
     date: "2023",
-    image: "/achievements/open-source.png"
+    image: "/3.jpg"
   },
-  // Add more achievements as needed
+  {
+    title: "Best Brand Ambassador - FAST Data Science Society",
+    description: "Won the 'Best Brand Ambassador' award as a Brand Ambassador of FAST Data Science Society",
+    date: "2023",
+    image: "/1.jpg"
+  },
+  {
+    title: "DataQuest Data Visualization Competition - 3rd Prize",
+    description: "Won 3rd Prize at a Data Visualization Competition named 'DataQuest' while participating as a Solo Competitor",
+    date: "2023",
+    image: "/5.jpg"
+  },
+  {
+    title: "The Talent Games - Badge of Distinction",
+    description: "Won a 'Badge of Distinction' from The Talent Games after getting ranked in the Top 10th Percentile Globally",
+    date: "2023",
+    image: "/4.jpg"
+  },
+  {
+    title: "Aga Khan Board Bridge Scholarship",
+    description: "Received a national level scholarship from Aga Khan Board named as 'Bridge Scholarship' which covered the whole expenses of intermediate education",
+    date: "2023",
+    image: "/6.jpg"
+  }
 ];
 
 export default function Achievements() {
