@@ -31,10 +31,9 @@ export default function ProfileGrid() {
               <div className="col-span-4 flex items-center gap-4">
                 <UserRound />
                 <div className="flex flex-col">
-                  <span className="">Hi, I&apos;m Abid Hassan.</span>
+                  <span className="">Hi, I&apos;m Syed Abid Hassan.</span>
                   <span className="text-sm uppercase opacity-50">
-                    Professional Data Analyst<br></br>Python | PowerBI 
-                    Specialist
+                    Data & Business Intelligence Professional
                   </span>
                 </div>
               </div>
@@ -59,11 +58,10 @@ export default function ProfileGrid() {
             <div className="grid grid-cols-5">
               <div className="grid col-span-4 gap-4">
                 <h2 className=" text-4xl sm:text-6xl font-bold">
-                  Passionate to pursue the technology.
+                  Your Partner in Business Data Solutions
                 </h2>
                 <p className=" opacity-50">
-                  I enjoy learning new things and try to overcome new challenges
-                  while analyzing how I improved through them.
+                  Helping businesses understand their data better with easy-to-use dashboards / reports, clear insights, and smart solutions that support better decisions
                 </p>
               </div>
             </div>

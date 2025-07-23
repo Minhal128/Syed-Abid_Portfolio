@@ -38,7 +38,7 @@ export default function ProjectCard({
             </a>
           ) : (
             <span className="uppercase text-xs bg-green-600 rounded-3xl py-1 px-2 text-background">
-              in progress
+              Completed
             </span>
           )}
           {live != null ? (
