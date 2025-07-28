@@ -41,9 +41,9 @@ const projects = [
     title: "InsightKart: Amazon Analytics",
     description:
       "E-commerce analytics: Used Kaggle sales data, transformed with Power Query, built KPIs with DAX, designed and implemented interactive Power BI dashboards.",
-    imageUrl: "/insightkart.jpg",
+    imageUrl: "/insightKart.jpg",
     details: {
-      overviewImages: ["/InsightKartpage1.jpg", "/InsightKartpage2.jpg"],
+      overviewImages: ["/insightKartpage1.jpg", "/insightKartpage2.jpg"],
       fullDescription: `In this project, I :\n- Used a cleaned e-commerce sales dataset which was obtained from Kaggle in order to save time from data collection.\n- Did some required data transformations using Power Query to align the data with the requirement.\n- Studied the data and identified the KPIs that are required and later configured those KPIs using DAX in Power BI.\n- Analyzed the data to extract insight which were further showcased using charts and visuals.\n- Prepared a mock dashboard to finalize the layout design of dashboards.\n- Implemented the mock design in Power BI and added the necessary functionalities like buttons, slicers etc to make the dashboard interactive.`,
       skills: [
         "Data Visualization",

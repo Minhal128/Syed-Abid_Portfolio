@@ -81,20 +81,53 @@ export default function Page() {
         <div className="grid sm:col-span-2 gap-10">
           <div className="flex-1">
             <h2 className="text-3xl font-bold mb-4">About Me</h2>
-            <p className="text-gray-400 whitespace-pre-line">
-I am a Computer Science graduate with a solid interest and passion in Data Analytics &amp; Business Intelligence. Keeping this passion and interest as my top most priority, I have/am :
-
-➡ Currently working as a 𝐉𝐮𝐧𝐢𝐨𝐫 𝐁𝐈 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐞𝐫 at 𝐂𝐞𝐧𝐭𝐞𝐠𝐲 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬.
-➡ an 𝐈𝐓 𝐃𝐨𝐦𝐚𝐢𝐧 𝐋𝐞𝐚𝐝𝐞𝐫 𝐟𝐨𝐫 𝐏𝐚𝐤𝐢𝐬𝐭𝐚𝐧 at 𝐀𝐬𝐩𝐢𝐫𝐞 𝐈𝐧𝐬𝐭𝐢𝐭𝐮𝐭𝐞.
-➡ been within the 𝐓𝐨𝐩 50 Teams in 𝑼𝒏𝒊𝒍𝒆𝒗𝒆𝒓 𝑻𝒂𝒍𝒆𝒏𝒕 𝑯𝒖𝒏𝒕 &apos;25.
-➡ won a 𝐑𝐞𝐬𝐮𝐦𝐞 𝐂𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐨𝐧, organized by 𝐀𝐒𝐌𝐄 𝐐𝐔𝐄𝐒𝐓 𝐂𝐡𝐚𝐩𝐭𝐞𝐫.
-➡ A 𝐆𝐨𝐨𝐠𝐥𝐞 certified 𝐁𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐈𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 𝐏𝐫𝐨𝐟𝐞𝐬𝐬𝐢𝐨𝐧𝐚𝐥.
-➡ Worked on multiple internships, analyzed data, created dashboards, and presented insights using tools like 𝐏𝐨𝐰𝐞𝐫 𝐁𝐈, 𝐒𝐐𝐋, 𝐚𝐧𝐝 𝐄𝐱𝐜𝐞𝐥.
-➡ Earned certifications in 𝐒𝐐𝐋 (𝐁𝐚𝐬𝐢𝐜 &amp; 𝐈𝐧𝐭𝐞𝐫𝐦𝐞𝐝𝐢𝐚𝐭𝐞), 𝐏𝐲𝐭𝐡𝐨𝐧 (𝐁𝐚𝐬𝐢𝐜), 𝐚𝐧𝐝 𝐏𝐨𝐰𝐞𝐫 𝐁𝐈 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐚 𝐏𝐰𝐂 𝐒𝐰𝐢𝐭𝐳𝐞𝐫𝐥𝐚𝐧𝐝 𝐬𝐢𝐦𝐮𝐥𝐚𝐭𝐢𝐨𝐧.
-➡ Working as a Brand Ambassador, winning the 𝐁𝐞𝐬𝐭 𝐁𝐫𝐚𝐧𝐝 𝐀𝐦𝐛𝐚𝐬𝐬𝐚𝐝𝐨𝐫 award and contributing to event promotions.
-➡ Got multiple awards in my name. The recent one is a 𝐁𝐚𝐝𝐠𝐞 𝐨𝐟 𝐃𝐢𝐬𝐭𝐢𝐧𝐜𝐭𝐢𝐨𝐧 2024 from 𝐓𝐡𝐞 𝐓𝐚𝐥𝐞𝐧𝐭 𝐆𝐚𝐦𝐞𝐬.
-➡ An active member of the 𝐏𝐚𝐤𝐢𝐬𝐭𝐚𝐧-𝐔.𝐒. 𝐀𝐥𝐮𝐦𝐧𝐢 𝐍𝐞𝐭𝐰𝐨𝐫𝐤 , 𝐀𝐬𝐩𝐢𝐫𝐞 𝐈𝐧𝐬𝐭𝐢𝐭𝐮𝐭𝐞, and 𝐘𝐨𝐮𝐭𝐡 𝐏𝐚𝐫𝐥𝐢𝐚𝐦𝐞𝐧𝐭 𝐏𝐚𝐤𝐢𝐬𝐭𝐚𝐧 supporting learning and development initiatives.
-            </p>
+            <div className="text-gray-400">
+              <p className="mb-4">
+                I am a Computer Science graduate with a solid interest and passion in Data Analytics &amp; Business Intelligence. Keeping this passion and interest as my top most priority, I have/am :
+              </p>
+              <ul className="list-none space-y-2">
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>Currently working as a <strong>𝐉𝐮𝐧𝐢𝐨𝐫 𝐁𝐈 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐞𝐫</strong> at <strong>𝐂𝐞𝐧𝐭𝐞𝐠𝐲 𝐓𝐞𝐜𝐡𝐧𝐨𝐥𝐨𝐠𝐢𝐞𝐬</strong>.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>an <strong>𝐈𝐓 𝐃𝐨𝐦𝐚𝐢𝐧 𝐋𝐞𝐚𝐝𝐞𝐫 𝐟𝐨𝐫 𝐏𝐚𝐤𝐢𝐬𝐭𝐚𝐧</strong> at <strong>𝐀𝐬𝐩𝐢𝐫𝐞 𝐈𝐧𝐬𝐭𝐢𝐭𝐮𝐭𝐞</strong>.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>been within the <strong>𝐓𝐨𝐩 50 Teams</strong> in <em>𝑼𝒏𝒊𝒍𝒆𝒗𝒆𝒓 𝑻𝒂𝒍𝒆𝒏𝒕 𝑯𝒖𝒏𝒕 &apos;25</em>.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>won a <strong>𝐑𝐞𝐬𝐮𝐦𝐞 𝐂𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐨𝐧</strong>, organized by <strong>𝐀𝐒𝐌𝐄 𝐐𝐔𝐄𝐒𝐓 𝐂𝐡𝐚𝐩𝐭𝐞𝐫</strong>.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>A <strong>𝐆𝐨𝐨𝐠𝐥𝐞 certified 𝐁𝐮𝐬𝐢𝐧𝐞𝐬𝐬 𝐈𝐧𝐭𝐞𝐥𝐥𝐢𝐠𝐞𝐧𝐜𝐞 𝐏𝐫𝐨𝐟𝐞𝐬𝐬𝐢𝐨𝐧𝐚𝐥</strong>.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>Worked on multiple internships, analyzed data, created dashboards, and presented insights using tools like <strong>𝐏𝐨𝐰𝐞𝐫 𝐁𝐈</strong>, <strong>𝐒𝐐𝐋</strong>, <strong>𝐚𝐧𝐝 𝐄𝐱𝐜𝐞𝐥</strong>.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>Earned certifications in <strong>𝐒𝐐𝐋 (𝐁𝐚𝐬𝐢𝐜 &amp; 𝐈𝐧𝐭𝐞𝐫𝐦𝐞𝐝𝐢𝐚𝐭𝐞)</strong>, <strong>𝐏𝐲𝐭𝐡𝐨𝐧 (𝐁𝐚𝐬𝐢𝐜)</strong>, and <strong>𝐏𝐨𝐰𝐞𝐫 𝐁𝐈</strong> through a <strong>𝐏𝐰𝐂 𝐒𝐰𝐢𝐭𝐳𝐞𝐫𝐥𝐚𝐧𝐝 𝐬𝐢𝐦𝐮𝐥𝐚𝐭𝐢𝐨𝐧</strong>.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>Working as a Brand Ambassador, winning the <strong>𝐁𝐞𝐬𝐭 𝐁𝐫𝐚𝐧𝐝 𝐀𝐦𝐛𝐚𝐬𝐬𝐚𝐝𝐨𝐫</strong> award and contributing to event promotions.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>Got multiple awards in my name. The recent one is a <strong>𝐁𝐚𝐝𝐠𝐞 𝐨𝐟 𝐃𝐢𝐬𝐭𝐢𝐧𝐜𝐭𝐢𝐨𝐧 2024</strong> from <strong>𝐓𝐡𝐞 𝐓𝐚𝐥𝐞𝐧𝐭 𝐆𝐚𝐦𝐞𝐬</strong>.</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2">➡</span>
+                  <span>An active member of the <strong>𝐏𝐚𝐤𝐢𝐬𝐭𝐚𝐧-𝐔.𝐒. 𝐀𝐥𝐮𝐦𝐧𝐢 𝐍𝐞𝐭𝐰𝐨𝐫𝐤</strong>, <strong>𝐀𝐬𝐩𝐢𝐫𝐞 𝐈𝐧𝐬𝐭𝐢𝐭𝐮𝐭𝐞</strong>, and <strong>𝐘𝐨𝐮𝐭𝐡 𝐏𝐚𝐫𝐥𝐢𝐚𝐦𝐞𝐧𝐭 𝐏𝐚𝐤𝐢𝐬𝐭𝐚𝐧</strong> supporting learning and development initiatives.</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Skills Section */}

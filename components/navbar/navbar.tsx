@@ -14,7 +14,7 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const darkLogo = "/logo/logo.png";
-  const lightLogo = "/logo/logo-light.png";
+  const lightLogo = "/logo/logo.png";
   const menuItems = [
     { label: "All", href: "/" },
     { label: "Projects", href: "/projects" },

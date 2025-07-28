@@ -106,13 +106,13 @@ export default function BentoGrid() {
           <div className="card_bg">
             <div className="grid sm:grid-cols-5 p-10 gap-6">
               <div className="grid col-span-2 gap-4">
-                <span>I am Constently try to improve myself</span>
+                <span>I am committed to continuous self-improvement and personal growth.</span>
                 <h1 className=" text-5xl font-semibold">
                   Currently I Am Using
                 </h1>
                 <p className=" opacity-50 ">
                   {" "}
-                  I am actively developing my data visualization skills and consistently practice designing clear and effective dashboards to communicate insights
+                  I am actively enhancing my data visualization skills by consistently designing clear, impactful dashboards to effectively communicate data-driven insights
                 </p>
               </div>
               {/* skills column */}

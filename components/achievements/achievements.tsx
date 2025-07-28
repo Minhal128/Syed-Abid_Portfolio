@@ -16,49 +16,49 @@ interface Achievement {
 const certifications: Achievement[] = [
   {
     title: "SQL (Basic)",
-    description: "Professional certification for designing distributed systems on AWS",
+    description: "Demonstrates foundational skills in SQL, including basic queries, filtering, sorting, and joins.",
     date: "2023",
     issuer: "HackerRank",
     image: "/7.jpg"
   },
   {
     title: "Python (Basic)",
-    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    description: "Validates understanding of Python fundamentals such as data types, conditionals, loops, and basic functions.",
     date: "2023",
     issuer: "HackerRank",
     image: "/8.jpg"
   },
   {
     title: "Forage - Power BI Job Simulation",
-    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    description: "A virtual experience simulating real-world Power BI tasks, including data cleaning, visualization, and dashboard creation for business insights.",
     date: "2023",
-    issuer: "HackerRank",
+    issuer: "Forage",
     image: "/9.jpg"
   },
   {
     title: "Aspire Leaders Program",
-    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    description: "A leadership development initiative offering training in personal growth, critical thinking, and global networking for emerging leaders.",
     date: "2023",
-    issuer: "HackerRank",
+    issuer: "Aspire Institute",
     image: "/10.jpg"
   },
   {
     title: "Google Business Intelligence Certification",
-    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    description: "Covers core BI skills including data modeling, dashboard creation, and performance analysis using tools like SQL, Looker, and Tableau.",
     date: "2023",
-    issuer: "Coursera",
+    issuer: "Google",
     image: "/11.jpg"
   },
   {
     title: "Google Soft Skills Program",
-    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    description: "Focuses on developing essential workplace skills such as communication, collaboration, adaptability, and problem-solving.",
     date: "2023",
     issuer: "Google",
     image: "/12.jpg"
   },
   {
     title: "SQL (Intermediate)",
-    description: "Expertise in building scalable and reliable applications using Google Cloud",
+    description: "Highlights proficiency in more advanced SQL concepts like subqueries, window functions, CTEs, and data aggregation.",
     date: "2023",
     issuer: "HackerRank",
     image: "/13.jpg"
