@@ -2,8 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 769px) {
+  html {
+    font-size: 16px;
+  }
 }
 
 @layer base {
@@ -86,6 +110,75 @@ body {
 
 .card_bg {
   @apply backdrop-opacity-25 bg-gradient-to-tr dark:from-black/50 dark:to-black/5 border-2 rounded-3xl border-black/5 dark:border-white/5;
+}
+
+/* Enhanced mobile responsiveness for floating icons */
+@media (max-width: 640px) {
+  .header_floating-langs-grid {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+  
+  .header_floating-langs-item-z.is-faded-mobile {
+    opacity: 0.15;
+  }
+  
+  .header_floating-langs-item-x-y {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .header_floating-langs-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  
+  /* Enhanced mobile card styling */
+  .card_bg {
+    @apply rounded-2xl border;
+    border-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+  }
+  
+  .card_bg h1, .card_bg h2, .card_bg h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  
+  .card_bg p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .header_floating-langs-grid {
+    transform: scale(0.7);
+  }
+  
+  .header_floating-langs-item-x-y {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  
+  .header_floating-langs-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+@media (max-width: 640px) {
+  .card_bg {
+    @apply rounded-2xl border;
+  }
+}
+
+/* Hide scrollbar utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
 
 /* bg */

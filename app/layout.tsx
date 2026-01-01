@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Syed Abid Hassan's Portfolio",
+  title: "Abid - The Analyst You Can Count On",
   description:
     "Portfolio of Syed Abid Hassan, showcasing expertise in PowerBI and SQL.",
 };
@@ -76,9 +76,9 @@ export default function RootLayout({
               },
             }}
           />
-          <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 text-base space-y-4 z-10 ">
+          <div className="mx-auto w-full max-w-7xl px-2 sm:px-4 md:px-6 lg:px-8 text-base space-y-2 sm:space-y-4 z-10 overflow-x-hidden">
             <Navbar />
-            <div className="sm:mx-10">
+            <div className="mx-0 sm:mx-2 md:mx-4 lg:mx-10">
               {/* <Meteors number={30}/> */}
               {children}
             </div>
