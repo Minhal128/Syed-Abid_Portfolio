@@ -34,11 +34,11 @@ export default function CertificateCarousel({ images }: CertificateCarouselProps
               key={index}
               className="flex-[0_0_100%] min-w-0 relative"
             >
-              <div className="aspect-[4/3] relative rounded-lg overflow-hidden">
+              <div className="aspect-[16/9] relative rounded-lg overflow-hidden bg-black/20 flex items-center justify-center">
                 <img
                   src={image.src}
                   alt={image.alt}
-                  className="object-cover w-full h-full"
+                  className="object-contain w-full h-full"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                   <h3 className="text-white font-semibold">{image.title}</h3>
@@ -50,17 +50,19 @@ export default function CertificateCarousel({ images }: CertificateCarouselProps
       </div>
       
       <button
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-background/90 transition-colors"
+        className="absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm p-2 md:p-3 rounded-full shadow-lg hover:bg-background/90 transition-colors touch-manipulation min-h-[44px] min-w-[44px] flex items-center justify-center"
         onClick={scrollPrev}
+        aria-label="Previous certificate"
       >
-        <ChevronLeft className="w-6 h-6" />
+        <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
       </button>
       
       <button
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm p-2 rounded-full shadow-lg hover:bg-background/90 transition-colors"
+        className="absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-background/80 backdrop-blur-sm p-2 md:p-3 rounded-full shadow-lg hover:bg-background/90 transition-colors touch-manipulation min-h-[44px] min-w-[44px] flex items-center justify-center"
         onClick={scrollNext}
+        aria-label="Next certificate"
       >
-        <ChevronRight className="w-6 h-6" />
+        <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
       </button>
     </div>
   );

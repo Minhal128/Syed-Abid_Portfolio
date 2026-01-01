@@ -58,35 +58,35 @@ const projects = [
 
 function ProjectDetailsModal({ project, onClose }: { project: typeof projects[0]; onClose: () => void }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm px-2" onClick={onClose}>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm p-1 sm:p-2 md:px-2" onClick={onClose}>
       <div
-        className="relative w-full max-w-4xl mx-auto bg-background dark:bg-[#18181b] rounded-2xl shadow-2xl flex flex-col md:flex-row overflow-hidden border border-border"
+        className="relative w-full max-w-6xl h-[95vh] sm:h-[90vh] md:h-[85vh] mx-auto bg-background dark:bg-[#18181b] rounded-xl sm:rounded-2xl shadow-2xl flex flex-col md:flex-row overflow-hidden border border-border"
         onClick={e => e.stopPropagation()}
       >
         {/* Close button */}
         <button
-          className="absolute top-4 right-4 z-20 p-2 rounded-full bg-background/80 hover:bg-background/90 transition-colors border border-border"
+          className="absolute top-2 right-2 md:top-4 md:right-4 z-20 p-1.5 sm:p-2 rounded-full bg-background/80 hover:bg-background/90 transition-colors border border-border touch-manipulation"
           onClick={onClose}
           aria-label="Close"
         >
-          <X className="w-6 h-6 text-foreground" />
+          <X className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 text-foreground" />
         </button>
         {/* Left: Details */}
-        <div className="flex-1 min-w-0 p-8 flex flex-col gap-6 justify-center dark:bg-background/90">
-          <h2 className="text-3xl font-bold mb-2 text-foreground">{project.title}</h2>
-          <div className="prose prose-invert text-muted-foreground whitespace-pre-line mb-4 text-base">
+        <div className="flex-1 min-w-0 p-3 sm:p-4 md:p-8 flex flex-col gap-3 sm:gap-4 md:gap-6 justify-start md:justify-center dark:bg-background/90 overflow-y-auto">
+          <h2 className="text-lg sm:text-xl md:text-3xl font-bold mb-1 md:mb-2 text-foreground pr-8">{project.title}</h2>
+          <div className="prose prose-invert text-muted-foreground whitespace-pre-line mb-2 md:mb-4 text-xs sm:text-sm md:text-base">
             {project.details.fullDescription}
           </div>
-          <div className="flex flex-wrap gap-2 mt-2">
+          <div className="flex flex-wrap gap-1 sm:gap-1.5 md:gap-2 mt-1 md:mt-2">
             {project.details.skills.map(skill => (
-              <Badge key={skill} variant="secondary">{skill}</Badge>
+              <Badge key={skill} variant="secondary" className="text-[10px] sm:text-xs md:text-sm">{skill}</Badge>
             ))}
           </div>
         </div>
         {/* Right: Visuals */}
-        <div className="flex-1 min-w-0 p-8 flex items-center justify-center bg-background/80 dark:bg-[#232326] border-l border-border">
+        <div className="flex-1 min-w-0 p-3 sm:p-4 md:p-8 flex items-center justify-center bg-background/80 dark:bg-[#232326] border-t md:border-t-0 md:border-l border-border overflow-auto">
           {project.details.overviewImages.length > 1 ? (
-            <div className="w-full max-w-[700px] max-h-[500px]">
+            <div className="w-full h-full flex items-center justify-center">
               <CertificateCarousel
                 images={project.details.overviewImages.map((src, i) => ({
                   src,
@@ -99,7 +99,7 @@ function ProjectDetailsModal({ project, onClose }: { project: typeof projects[0]
             <img
               src={project.details.overviewImages[0]}
               alt={project.title}
-              className="rounded-xl shadow-lg w-full max-w-[700px] max-h-[500px] object-contain"
+              className="rounded-lg sm:rounded-xl shadow-lg w-full h-full object-contain"
             />
           )}
         </div>
@@ -114,13 +114,13 @@ export default function ProjectsPage() {
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center bg-background dark:bg-background/95 overflow-hidden">
       {/* Removed AnimatedGridPattern background */}
-      <div className="relative z-10 w-full max-w-5xl px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-12 text-foreground">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="relative z-10 w-full max-w-5xl px-2 sm:px-4 py-4 sm:py-8 md:py-16">
+        <h1 className="text-xl sm:text-2xl md:text-4xl font-bold text-center mb-4 sm:mb-6 md:mb-12 text-foreground">Projects</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-10">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="relative group cursor-pointer transition-transform hover:scale-[1.03] active:scale-95"
+              className="relative group cursor-pointer transition-transform hover:scale-[1.02] active:scale-95 touch-manipulation"
               onClick={() => setOpenProject(project)}
             >
               <Ripple className="z-0" />
