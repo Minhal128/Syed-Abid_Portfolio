@@ -15,6 +15,13 @@ interface Achievement {
 
 const certifications: Achievement[] = [
   {
+    title: "Oracle Cloud Infrastructure 2025 Certified AI Foundations Associate",
+    description: "Validates foundational knowledge of Oracle Cloud Infrastructure (OCI) and AI concepts, including core cloud services, AI fundamentals, and how AI is applied within Oracle’s cloud ecosystem.",
+    date: "2025",
+    issuer: "Oracle",
+    image: "/oracle.jpeg"
+  },
+  {
     title: "SQL (Basic)",
     description: "Demonstrates foundational skills in SQL, including basic queries, filtering, sorting, and joins.",
     date: "2023",
@@ -66,6 +73,20 @@ const certifications: Achievement[] = [
 ];
 
 const keyAchievements: Achievement[] = [
+  {
+    title: "Top New Launch",
+    description: "recognition as a Top New Launch on Topmate, showcasing strong initial impact, credibility, and positive engagement for newly launched offerings on the platform.",
+    date: "November 2025",
+    issuer: "Topmate",
+    image: "/keyA.jpeg"
+  },
+  {
+    title: "Certificate of Appreciation",
+    description: "In recognition of my invaluable contribution as an instructor for the Power BI 101 Course.",
+    date: "Dec 2025",
+    issuer: "Aspire Institute",
+    image: "/key.jpeg"
+  },
   {
     title: "ASME Quest Chapter Resume Competition Winner",
     description: "Won a Resume Competition organized by ASME Quest Chapter after competing against 40 individuals",
@@ -124,29 +145,27 @@ export default function Achievements() {
     }));
 
   return (
-    <div className="container mx-auto py-12 px-4">
+    <div className="container mx-auto py-4 sm:py-6 md:py-8 lg:py-12 px-2 sm:px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="flex justify-center space-x-4 mb-8">
+        <div className="flex justify-center space-x-1 sm:space-x-2 md:space-x-4 mb-4 sm:mb-6 md:mb-8">
           <button
             onClick={() => setActiveTab("certifications")}
-            className={`flex items-center space-x-2 px-6 py-3 rounded-full transition-all ${
-              activeTab === "certifications"
-                ? "bg-primary text-primary-foreground"
-                : "hover:bg-primary/10"
-            }`}
+            className={`flex items-center space-x-1 md:space-x-2 px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 rounded-full transition-all text-xs sm:text-sm md:text-base touch-manipulation ${activeTab === "certifications"
+              ? "bg-primary text-primary-foreground"
+              : "hover:bg-primary/10"
+              }`}
           >
-            <Award className="w-5 h-5" />
+            <Award className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
             <span>Certifications</span>
           </button>
           <button
             onClick={() => setActiveTab("achievements")}
-            className={`flex items-center space-x-2 px-6 py-3 rounded-full transition-all ${
-              activeTab === "achievements"
-                ? "bg-primary text-primary-foreground"
-                : "hover:bg-primary/10"
-            }`}
+            className={`flex items-center space-x-1 md:space-x-2 px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 rounded-full transition-all text-xs sm:text-sm md:text-base touch-manipulation ${activeTab === "achievements"
+              ? "bg-primary text-primary-foreground"
+              : "hover:bg-primary/10"
+              }`}
           >
-            <Trophy className="w-5 h-5" />
+            <Trophy className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5" />
             <span>Key Achievements</span>
           </button>
         </div>
@@ -157,10 +176,10 @@ export default function Achievements() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
-          className="space-y-8"
+          className="space-y-4 sm:space-y-6 md:space-y-8"
         >
           {/* Carousel Section */}
-          <div className="mb-8">
+          <div className="mb-4 sm:mb-6 md:mb-8">
             <CertificateCarousel
               images={activeTab === "certifications" ? certificateImages : achievementImages}
             />
@@ -168,18 +187,18 @@ export default function Achievements() {
 
           {/* Cards Section */}
           {activeTab === "certifications" ? (
-            <div className="grid gap-6">
+            <div className="grid gap-3 sm:gap-4 md:gap-6">
               {certifications.map((cert, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-card rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+                  className="bg-card rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  <h3 className="text-xl font-semibold mb-2">{cert.title}</h3>
-                  <p className="text-muted-foreground mb-2">{cert.description}</p>
-                  <div className="flex justify-between items-center text-sm text-muted-foreground">
+                  <h3 className="text-sm sm:text-lg md:text-xl font-semibold mb-1.5 sm:mb-2">{cert.title}</h3>
+                  <p className="text-muted-foreground mb-1.5 sm:mb-2 text-xs sm:text-sm md:text-base">{cert.description}</p>
+                  <div className="flex justify-between items-center text-[10px] sm:text-xs md:text-sm text-muted-foreground">
                     <span>{cert.issuer}</span>
                     <span>{cert.date}</span>
                   </div>
@@ -187,18 +206,18 @@ export default function Achievements() {
               ))}
             </div>
           ) : (
-            <div className="grid gap-6">
+            <div className="grid gap-3 sm:gap-4 md:gap-6">
               {keyAchievements.map((achievement, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-card rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow"
+                  className="bg-card rounded-lg sm:rounded-xl p-3 sm:p-4 md:p-6 shadow-lg hover:shadow-xl transition-shadow"
                 >
-                  <h3 className="text-xl font-semibold mb-2">{achievement.title}</h3>
-                  <p className="text-muted-foreground mb-2">{achievement.description}</p>
-                  <div className="text-sm text-muted-foreground text-right">
+                  <h3 className="text-sm sm:text-lg md:text-xl font-semibold mb-1.5 sm:mb-2">{achievement.title}</h3>
+                  <p className="text-muted-foreground mb-1.5 sm:mb-2 text-xs sm:text-sm md:text-base">{achievement.description}</p>
+                  <div className="text-[10px] sm:text-xs md:text-sm text-muted-foreground text-right">
                     {achievement.date}
                   </div>
                 </motion.div>
